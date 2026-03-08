@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DualSphere Apps</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+body{
+background: radial-gradient(circle at top,#6d28d9,#0f172a 60%);
+min-height:100vh;
+font-family: system-ui,-apple-system,sans-serif;
+}
+
+.glass{
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(20px);
+border:1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover{
+transform: translateY(-8px) scale(1.02);
+}
+
+</style>
+
 </head>
-<body>
-    
+
+<body class="text-white">
+
+<!-- HEADER -->
+<header class="text-center py-16 px-6">
+
+<h1 class="text-5xl font-bold mb-4">
+DualSphere Applications
+</h1>
+
+<p class="text-white/70 max-w-xl mx-auto">
+Central hub for application privacy policies, terms & legal pages.
+</p>
+
+</header>
+
+
+
+<!-- APP SECTION -->
+<section class="max-w-6xl mx-auto px-6 pb-16">
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+
+<!-- APP CARD -->
+<div class="glass card rounded-3xl p-8 shadow-xl transition duration-300">
+
+<img src="./art-book/images/art-drawing-logo.png" class="w-20 mb-4">
+
+<h2 class="text-2xl font-semibold mb-2">
+Art Drawing
+</h2>
+
+<p class="text-white/70 mb-6">
+Drawing assistant application that helps users trace images using camera overlay.
+</p>
+
+
+<div class="flex flex-col gap-3">
+
+<a href="./art-book/art-privacy-policy.html"
+target="_blank"
+rel="noopener noreferrer"
+class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-lg text-center font-medium">
+Privacy Policy
+</a>
+
+<a href="./art-book/art-terms.html"
+target="_blank"
+rel="noopener noreferrer"
+class="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-lg text-center font-medium">
+Terms & Conditions
+</a>
+
+<!-- <a href="./art-data-deletion.html"
+target="_blank"
+rel="noopener noreferrer"
+class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg text-center font-medium">
+Data Deletion
+</a> -->
+
+</div>
+
+</div>
+
+
+
+<!-- FUTURE APP PLACEHOLDER -->
+<div class="glass card rounded-3xl p-8 shadow-xl transition duration-300 flex flex-col justify-center items-center text-center">
+
+<h2 class="text-xl font-semibold mb-2">
+Upcoming App
+</h2>
+
+<p class="text-white/60">
+Future application legal pages will appear here.
+</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="text-center pb-10 text-white/60">
+
+© 2026 DualSphere Apps
+
+</footer>
+
+
 </body>
 </html>
